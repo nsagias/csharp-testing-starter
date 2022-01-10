@@ -11,7 +11,7 @@ public class UnitTest1
     
     [Fact]
     public void FailingTest() {
-      Assert.Equal(5, Add(2 ,2));
+      Assert.NotEqual(5, Add(2 ,2));
     }
 
     int Add(int x, int y) {
