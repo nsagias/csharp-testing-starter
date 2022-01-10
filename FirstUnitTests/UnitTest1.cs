@@ -37,13 +37,14 @@ public class CalculatorTests () {
     // Arrange
     double firstNumber = 10;
     double secondNumber = 11;
+    double expectedOutput = 21;
     var calculator = new Calculator();
 
     // Act
     double result = calculator.Sum(firstNumber, secondNumber);
 
     // Assert
-    double expectedOutput = 21;
+    
     Assert.Equal(expectedOutput, result);
   }
 
