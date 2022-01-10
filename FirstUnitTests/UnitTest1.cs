@@ -32,6 +32,7 @@ public class UnitTest1
 }
 
 public class CalculatorTests () {
+
   [Fact]
   public void  Sum_Of_Two_Numbers () {
     // Arrange
@@ -47,5 +48,3 @@ public class CalculatorTests () {
     
     Assert.Equal(expectedOutput, result);
   }
-
-}
