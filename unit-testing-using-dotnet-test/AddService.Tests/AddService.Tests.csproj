@@ -20,4 +20,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AddService\AddService.csproj" />
+  </ItemGroup>
+
 </Project>
