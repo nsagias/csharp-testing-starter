@@ -34,4 +34,12 @@ public class AddService_AddTwoShould {
       Assert.NotEqual(result, expectedOutput);
     }
 
+    [Theory]
+    [InlineData(2,2,3)]
+    public void Add_Two_Theory_Example(double num1, double num2, double expectedValue) {
+       double result = _addService.Add(num1, num2);
+       double expectedOutput = expectedValue;
+       Assert.NotEqual(result, expectedOutput);
+    }
+
 }
