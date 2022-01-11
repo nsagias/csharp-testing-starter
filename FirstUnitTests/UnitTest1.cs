@@ -30,21 +30,3 @@ public class UnitTest1
       return value % 2 == 1;
     }
 }
-
-public class CalculatorTests () {
-
-  [Fact]
-  public void  Sum_Of_Two_Numbers () {
-    // Arrange
-    double firstNumber = 10;
-    double secondNumber = 11;
-    double expectedOutput = 21;
-    var calculator = new Calculator();
-
-    // Act
-    double result = calculator.Sum(firstNumber, secondNumber);
-
-    // Assert
-    
-    Assert.Equal(expectedOutput, result);
-  }
