@@ -36,6 +36,8 @@ public class AddService_AddTwoShould {
 
     [Theory]
     [InlineData(2,2,3)]
+    [InlineData(5,2,3)]
+    [InlineData(-1,0,3)]
     public void Add_Two_Theory_Example(double num1, double num2, double expectedValue) {
        double result = _addService.Add(num1, num2);
        double expectedOutput = expectedValue;
