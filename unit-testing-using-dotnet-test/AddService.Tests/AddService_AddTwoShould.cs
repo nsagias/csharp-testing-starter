@@ -1,12 +1,17 @@
+using System.Reflection;
 using Xunit;
+using Add.Service;
 
-namespace AddService.Tests;
+namespace Add.UnitTests.Services;
 
-public class UnitTest1
+public class AddService_AddTwoShould
 {
     [Fact]
-    public void Test1()
-    {
-
+    public void AddTwo() {
+      var addService = new AddService();
+      double result = addService.Add(1, 2);
+      double expectedOutput = 3;
+      
+      Assert.Equal(result, expectedOutput);
     }
 }
